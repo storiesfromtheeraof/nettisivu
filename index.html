@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %pour la couleur
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %utile pour taper directement les caractères accentués
+\begin{document}
+\begin{align*}<!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
@@ -77,6 +83,15 @@
       li {
           color: yellow; font-family: 'AtkinsonRegular', sans-serif;
       }
+      td {
+          color: yellow; font-family: 'AtkinsonRegular', sans-serif;
+      }
+      tr {
+          color: yellow; font-family: 'AtkinsonRegular', sans-serif;
+      }
+      tb {
+          color: yellow; font-family: 'AtkinsonRegular', sans-serif;
+      }
       h1 {
           color: yellow; font-family: 'AgdasimaBold', sans-serif;
       }
@@ -95,15 +110,21 @@
 <p>Teknologian murros on vaikuttanut kulttuuriin. Kehokauppa on laillista ja kehon vuokraus yleistä. Taloudellinen eriarvoisuus näkyy kulttuurissa kun rikkailla on mahdollisuus ikuiseen elämään kehoa vaihtamalla kun taas köyhille tie rikkauteen on kehon myyminen ja pelkkä selviäminen voi edellyttää kehon antamista vuokralle.</p>
 <p>Tarinoita tietoisuuden ajalta pelimekaniikka pohjautuu PbtA formaattiin. Pelaajat pelaavat tietoisuuksia ja hahmojen ominaisuudet ovat tietoisuuksien ominaisuuksia kehojen ominaisuuksien sijasta.</p>
 <h2>Beta julkaisu</h2>
-<p>Beta julkaisu sisältää pelinvetäjänsuojan, tulostettavat pelimateriaalit, sekä tukimateriaalia pelitestausta varten. Beta julkaisun saa joko osallistumalla pelin kehittäjän vetämään Tarinoita tietoisuuden ajalta peliin pelaajana esimerkiksi Ropeconissa tai ilmoittautumalla pelitestaajaksi.</p>
-        <table width="100%"><tr><td width="10%"></td><td>
-<img src="GMscreenOutside.jpeg" align="center" width="100%">
-</td><td>
-<img src="GMscreenInside.jpeg" align="center" width="100%">
-        </td><td width="10%"></td></tr></table>
-<p>Pelitestaajaksi voi hakea lähettämällä sähköpostin osoitteeseen feedback@eraof.net. Sähköpostissa tulee kertoa miksi on kiinnostunut Tarinoita tietoisuuden ajalle pelistä ja mihin postiosoitteeseen pelinvetäjänsuojan voi postittaa. Vastineeksi pelinvetäjänsuojasta odotan saavani samaan sähköpostiin joko peliraportteja tai mielipiteen siitä mitä beta julkaisusta pitäisi lopulliseen julkaisuun muuttua jotta peli voisi päätyä pöytään asti.</p>
+<p>Vuoden 2025 Ropeconissa jaoin peliä pelanneille beta versioita pelinvetäjänsuojasta. Ajatuksenani oli mahdolistaa muille pelinvetäminen ja kerätä pelin kehityksen tueksi tietoa siitä miten muut peliä käyttävät. Beta oli minimalistinen, eli pelinvetäjän suojaan oli yritetty mahduttaa kaikki pelaamiseen tarvittava ja lisäksi pelimateriaalit, seikkailuja ja asioita "selventäviä" sekalaisia tekstejä oli netistä ladattavissa. Käytännössä tietooni on tullut vain yksi beta versiolla muualla vedetty peli. Jos olet sellaisen vetänyt tai Tarinoita Tietoisuuden ajalla peleihin osallistunut, olisin kiitollinen kevyestäkin peliraportista. Tiedon peliraportista voi lähettää osoitteeseen feedback@eraof.net.</p>
+<p>Beta versiosta paljastui vielä korjattavia ongelmia, joilla oli merkittävä vaikutus pelin mekaniikkaan. Aiempina vuosina sain paljon positiivista palautetta tavasta miten statit oli toteutettu, mutta kun vuoden 2025 versioon tein pienen kosmeettisen muutoksen statteihin, positiivinen palaute loppui kuin seinään. Syynä oli pitkälti se, että kyseinen kosmeettinen muutos toi selvemmin näkyville rakenteelliset ongelmat stattisysteemin taustalla. Tästä seurasi se, että hahmon statit piti vaihtaa, millä ymmärrettävästi oli varsin paljon vaikutusta peliin kautta linjan.</p>
+<p>Toinen Beta version ongelma oli lähestyttävyys. Ajatukseni oli, että kynnys kokeilla peliä olisi matala, jos saisin pelimateriaalin puristettua pieneksi. Siitä syntyi ajatus yrittää saada "kaikki" mahtumaan pelinvetäjän suojaan. Käytännössä asian kompleksisuus ei kuitenkaan muutu mihinkään sen seurauksena, että siitä kerrotaan vähemmän, joten kynnys kokeilla peliä oli korkea. Peliä Norjassa vetänyttä pelinvetäjää tuin vastaamalla kysymyksiin, kääntämällä tekstejä englanniksi ja muutenkin auttamalla parhaani mukaan. Hänen palaute oli mm. se, että hän ei olisi pystynyt vetämään pelillä mitään muuta seikkailua kuin sen jonka itse oli pelannut ja sitäkin vetäessä hän pelkäsi pelaajien tekevän jotakin mihin vastaamiseen hänen tuntemuksensa pelistä ei riittäisi. Tämä sai minut ymmärtämään, ettei pelinvetäjän suoja ole riittävä formaatti pelin kokeilemiseen.</p>
+<h2>Arvosteluja</h2>
+<p><a href="https://ropeblogi.wordpress.com/2025/09/26/the-new-spring-autumn-25/">Peliraportti</a> Norjassa beta julkistuksella vedetystä pelistä.</p>
+<h2>Projektin tilanne kesäkuu 2026</h2>
+<p><b>Fiktio:</b> Keskeiset teknologit ovat olleet lukittuna jo pitkään. Teknologian toiminnan yksityiskohdat on selvitetty ja teknologiaan on tehty korjauksia, jotka huomioivat tuoreen laajojen kielimallien kehityksen. Keinoja tuoda fiktio pelaajien käyttöön on testattu. Tämä on pelin suurimpia haasteita, mutta ratkaisuja siihen on myös löydetty sekä pelimateriaalin käytössä, että pelinvetämisen tekniikoista.</p>
+<p><b>Pelimekaniikka:</b> Noppamekaniikaksi on lukittu PbtA ja sitä on testattu muutama vuosi. Stattien muuttumisen myötä myös siirtovalikoima muuttui 2025-2026. Pelikirjat heijastelevat pelimaailman kulttuuria ja tarvitsevat vielä hieromista. Syy PbtA:n valintaan on sen kyky tuoda esille fiktiota.</p>
+<p><b>Kuvitus:</b> Kannen ja pelinvetäjän suojan kuvitus on teetetty, samoin sisäsivujen kuvitus pääosin. Lähinnä haluaisin vielä teettää mustavalkokuvan standardoidun tietoisuuden nanokoneen rakenteesta. Markkinoinnin tarvitsemaa kuvitusta voi työstää jo teetettyjen kuvitusten pohjalta.</p>
+<p><b>Taitto:</b> Tämänhetkisessä versiossa on noin 300 A5 sivua tekstiä. Kuvitus on pääosin taittamatta, oikoluku tekemättä, esimerkit tarkistamatta, pelimateriaalit on liittämättä kirjan tekstiin, seikkailuosio on pahasti kesken ja hakemisto tekemättä. Osa siirtojen kuvauksista kaipaa vielä työstöä ja pelikirjojen kuvaukset puuttuu. Teknologian kuvaukseen olen tyytyväinen, samoin kirjan yleiseen rakenteeseen. Rakenteessa on kohtia mitkä vaativat työtä, mutta kokonaisuus vaikuttaa eheältä.</p>
+<p><b>Julkaisu:</b> Markkinointia on mietitty, osa markkinoinnin kuvituksesta on teetetty, julkaisuprosessia on testattu, samoin markkinointimateriaalin painatusta, käyttöä ja sen saamaa näkyvyyttä on testattu. Vapaakappaleet ja ISBN-numerointi on selvitetty. Painatusvaihtoehtoja on tutkittu.</p>
+<p><b>Suunnitelmat:</b> Ensisijainen tavoitteeni on julkaista fyysinen kirja. PDF julkaisua koko kirjasta en aio tehdä, mutta todennäköisesti teen PDF preview version, johon on valittu osajoukko kirjan sivuista.</p>
 		</div>
         <div class="hidden-element"></div>
 	</div>
 </body>
-</html>
+</html>\end{align*}
+\end{document}
